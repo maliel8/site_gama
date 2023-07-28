@@ -1,0 +1,23 @@
+*
+{
+      margin: 0;
+      padding: 0;
+}
+
+.mes_section
+{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+}
+
+@media screen and (max-width:900px){
+      
+      .mes_section{
+            grid-template-columns: 1fr;
+      }
+      
+}
+
+
+

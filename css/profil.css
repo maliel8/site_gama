@@ -1,0 +1,133 @@
+*
+{
+      margin: 0;
+      padding: 0;
+}
+img[class="couverture"]
+{
+      max-height: 400px;
+      max-width: 1500px;
+      min-height: 100px;
+      min-width: 100px;
+      object-fit: cover;
+}
+img[class="profil1"]
+{
+      height: 300px;
+      width: 300px;
+      object-fit: cover;
+}
+
+.information a:hover
+{
+      color: aqua;
+
+}
+.profil
+{
+      background-color: rgb(36, 132, 137);
+     
+}
+.profil1
+{
+      display: inline-block;
+      
+      border-radius: 360px;
+      position: absolute;
+      top: 15em;
+      right: 0;
+      left: 30em;
+}
+.couverture
+{
+      display: inline-block;
+      border-radius: 10px;
+      width: 100%;
+      position: relative;
+      
+}
+.information
+{
+      width: 100%;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:20px;
+      
+}
+.image
+{
+      padding: 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 200px 200px;
+      gap:15px;
+}
+.image img 
+{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+.mes_section
+{
+      border-bottom: 1px solid #5e77bc;
+      border-right: 1px solid #5e77bc;
+      box-shadow: 5px 3px 5px black;
+      
+}
+.in_couverture
+{
+      position: relative;
+}
+
+.invisible1
+{
+      position: absolute;
+      top:0em;
+      left: 30em;   
+      background-color: rgb(01 01 25 0);
+      color:black;
+      display: none;
+}
+
+.in_couverture:hover .invisible1
+{
+      display: flex;
+}
+
+
+.invisible2
+{
+      position: absolute;
+      top:13em;
+      left: 35em;   
+      background-color: rgba(246 244 244 0.9);
+      color:black;
+      display: none;
+       
+}
+.in_profil1:hover .invisible2
+{
+      display: flex;
+}
+@media screen and (max-width:1300px){
+      
+      .profil1,.invisible1,.invisible2
+      {
+            display: none;
+      }
+      
+}
+@media screen and (max-width:800px) {
+      img[class="couverture"]
+      {
+            max-height: 800px;
+            max-width: 800px;
+            min-height: 100px;
+            min-width: 100px;
+            object-fit: cover;
+      }
+}

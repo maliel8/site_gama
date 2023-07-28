@@ -1,0 +1,232 @@
+*
+{
+      margin: 0;
+      padding: 0;
+}
+header img{
+      display: inline-block;
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border: 1px black solid;
+      border-radius: 360px;
+      margin-bottom: 15px;
+}
+.title_i
+{
+      font-size: 25px;
+}
+header
+{
+      width: 50%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+}
+nav
+{
+      border-radius: 10px;
+      background-color: gray;
+      margin: 15px;
+      padding: 7px;
+}
+a{
+      text-decoration: none;
+      color: aqua;
+}
+a:hover 
+{
+      text-decoration: overline;
+      color: rgba(18, 46, 59, 0.7);
+}
+/* test sur le profil*/
+.div_hover
+{
+      position: absolute;
+      top: 20em;
+      left: 9em;
+      color:white;
+      background-color: rgb(16, 33, 34);
+      display: none;
+}
+.lien_hover
+{
+      position: relative;
+}
+.lien_hover:hover .div_hover
+{
+      display: flex;
+}
+/*travail sur les icone*/
+i img
+{
+      width: 22px;
+      height: 18px;
+      object-fit: cover;
+}
+.progression ,.couleur p
+{
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 1px solid black;
+      border-radius: 360px;
+     
+}
+.contener_competences
+{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+}
+.icones_competences
+{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top:10px ;
+      
+}
+.html,.vert{background-color: green;}
+.php,.orange{background-color: rgb(197, 88, 10);}
+.sql{background-color: rgb(197, 88, 10);}
+.javascript,.rouge{background-color: rgb(197, 38, 10);}
+
+
+/*principale*/
+body
+{
+      margin: 10px;
+      background-color: rgb(11, 28, 29);
+      color: white;
+      display: flex;
+}
+h1
+{
+      margin-top: 20px;
+      margin-bottom: 20px;
+}
+h2+p{
+      margin-bottom: 15px;
+}
+
+main
+{
+      /*display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;*/
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+}
+.information_generale
+{
+      padding: 15px;
+      margin: 15px;
+      border-left: 1px solid rgb(141, 139, 139);
+      border-bottom: 1px solid rgb(141, 139, 139);;
+      border-radius: 15px;
+}
+.information_generale p
+{
+      margin-top: 10px;
+}
+.information_detaille
+{
+      padding: 15px;
+      background-color:white;
+      color:black;
+      border-radius: 20px;
+}
+.evenements_dates
+{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+}
+.annee
+{
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+.evenement 
+{
+      margin-top: 15px;
+}
+.floue
+{
+      opacity: 0.7;
+}
+
+.legende 
+{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows:4em;
+ }
+ footer
+ {
+      position: absolute;
+      left: 0;
+      top: 55em;
+      bottom:50em;
+      
+ }
+ footer h2
+ {
+      text-align: center;
+      margin-bottom: 5px;
+      text-decoration: underline;
+ }
+.legende .correspondance_couleur 
+{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+.couleur
+{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+
+/* afficharge telephone*/
+@media screen and (max-width:1000px) {
+      body
+      {
+            background-color: rgb(11, 28, 29);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+      }
+      main 
+      {
+            flex-direction: column;
+
+      }
+      .information_generale , .information_detaille
+      {
+            width: auto;
+            margin:7px;
+            font-size: 13px;
+      }
+      header img 
+      {
+            max-width: 200px;
+            max-height: 200px;
+            min-width: 100px;
+            min-height: 100px;
+            object-fit: cover;
+      }
+      footer 
+      {
+            position: unset;
+      }
+}

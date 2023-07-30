@@ -145,8 +145,10 @@ figure
             min-width: 100px;
             object-fit: cover;
       }
-      figure
+      .image
       {
-            margin-top: 15px;
+            display: grid;
+             grid-template-columns: 1fr;
+             grid-row: auto;
       }
 }
